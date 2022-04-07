@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2? family= Josefin+Sans:wght@300;400;700 & display=swap');
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: tan;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header h1{
+    text-align: center;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 1.1rem;
+    padding: 0.3rem;
+    background-color: burlywood;
+    border-radius: 1rem;
+}
+img{
+    width: 40%;
+}
+.mainNosotros{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "parrafo parrafo"
+                         "imagen1 imagen2"
+                         "imagen3 imagen4";
+    justify-content: center;
+}
+.sectionPadre{
+    display: none;
+}
+.parrafo{
+    text-align: center;
+    grid-area: parrafo;
+}
+.imagen1{
+    grid-area: imagen1;
+}
+.imagen2{
+    grid-area: imagen2;
+}
+.imagen3{
+    grid-area: imagen3;
+}
+.imagen4{
+    grid-area: imagen4;
+}
+footer p{
+    text-align: center;
+    background-color: burlywood;
+    border-radius: 1rem;
+}
+@media only screen and (min-width: 600px){
+    .mainNosotros{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "parrafo parrafo parrafo parrafo"
+                             "img img img img"
+                             "imagen1 imagen2 imagen3 imagen4";
+        justify-content: center;
+    }
+    .sectionPadre{
+       display: block;
+       grid-area: img;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .parrafo{
+       font-size: 1.2rem;
+    }
+    .imagen1, .imagen2, .imagen3, .imagen4{
+       padding: 1.5rem;
+    }
+     main div img{
+       width: 40%;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .mainNosotros{
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "parrafo parrafo img img"
+                              "imagen1 imagen2 imagen3 imagen4";
+        justify-content: center;
+        align-items: center;
+    }
+}
